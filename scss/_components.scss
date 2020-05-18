@@ -1,0 +1,160 @@
+.wrapper {
+  margin: 0 auto;
+  max-width: 1110px;
+  width: 85%;
+}
+
+.text {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.title {
+  font-size: 2.6rem;
+  line-height: 1.25;
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+}
+
+.subtitle {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  &__logo {
+    height: 100%;
+    width: 9.5rem;
+  }
+}
+
+.btn {
+  border-radius: 100rem;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: transform .1s linear;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &--empty {
+    border: 1px solid $primary-pink;
+    color: $primary-pink;
+    font-size: 1rem;
+    padding: .4rem 1.7rem;
+  }
+
+  &--filled {
+    background: $primary-pink;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 1.2rem 4.2rem;
+    box-shadow: 0 4px 4px rgba($primary-pink, .25);
+  }
+
+  &--square {
+    background: $primary-pink;
+    border: none;
+    border-radius: .4rem;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    outline: 0;
+    padding: 1.4rem 4.1rem;
+  }
+}
+
+.curved {
+  height: 100%;
+  width: 100%;
+
+  &--desktop {
+    display: none;
+  }
+
+  &--mobile {
+    display: block;
+  }
+}
+
+.contact__logo {
+  height: 100%;
+  width: 20rem;
+}
+
+@media screen and (min-width: 767px) {
+  .wrapper {
+    width: 89%;
+  }
+
+  .curved {
+    height: 100%;
+    width: 100%;
+  
+    &--desktop {
+      display: block;
+    }
+  
+    &--mobile {
+      display: none;
+    }
+  }
+
+  .text {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+  
+  .title {
+    font-size: 4.8rem;
+    line-height: 1.25;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .subtitle {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .header {
+    &__logo {
+      height: 100%;
+      width: 24rem;
+    }
+  }
+
+  .btn {
+    &--empty {
+      font-size: 1.6rem;
+      padding: .8rem 3rem;
+    }
+  
+    &--filled {
+      background: $primary-pink;
+      color: white;
+      font-size: 2rem;
+      font-weight: 700;
+      padding: 2.5rem 8.5rem;
+      box-shadow: 0 4px 4px rgba($primary-pink, .25);
+    }
+  
+    &--square {
+      background: $primary-pink;
+      border: none;
+      border-radius: .4rem;
+      color: white;
+      font-size: 1.6rem;
+      font-weight: 700;
+      outline: 0;
+      padding: 1.4rem 4.1rem;
+    }
+  }
+}
